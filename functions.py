@@ -21,18 +21,18 @@ go below this docstring.
    #     `True` if it is your hometown, and `False` otherwise.
 
 def hometown(town):
-   """ Return True if hometown, otherwise return False
-   
-   *******************************************
-   * Pseudocode:                             *
-   * 1. Take a string as a parameter.        *
-   * 2. Return boolean if it's my hometown   *
-   *******************************************
-   """
+    """ Return True if hometown, otherwise return False
+    
+    *******************************************
+    * Pseudocode:                             *
+    * 1. Take a string as a parameter.        *
+    * 2. Return boolean if it's my hometown   *
+    *******************************************
+    """
 
-   kristen_hometown = "Fairfield"
+    kristen_hometown = "Fairfield"
 
-   return town == kristen_hometown
+    return town == kristen_hometown
 
 # TEST_CASES
 # print(hometown("Fairfield"))
@@ -44,15 +44,16 @@ def hometown(town):
    #     returns the concatenation of the two names in one string.
 
 def fullname(first_name, last_name):
-   """ Return the concatenation of first_name and last_name
+    """ Return the concatenation of first_name and last_name
 
-   *******************************************
-   * Pseudocode:                             *
-   * 1. Return concatenation of both args    *
-   *******************************************
-   """
-   
-   return first_name + " " + last_name
+    *******************************************
+    * Pseudocode:                             *
+    * 1. Return concatenation of both args    *
+    *******************************************
+    """
+
+
+    return first_name + " " + last_name
 
 # TEST_CASE:
 # print(fullname("Kristen", "Campbell"))
@@ -65,20 +66,20 @@ def fullname(first_name, last_name):
    #     from part (a) evaluates to.
 
 def hometown_greetings(town, first_name, last_name):
-   """ Returns a greeting based on hometown
+    """ Returns a greeting based on hometown
 
-   ********************************************
-   * Pseudocode:                              *
-   * 1. Call hometown() function              *
-   * 2. Print message depending on hometown   *
-   ********************************************
-   """
+    ********************************************
+    * Pseudocode:                              *
+    * 1. Call hometown() function              *
+    * 2. Print message depending on hometown   *
+    ********************************************
+    """
 
-   if hometown(town):
-      print("Hi, " + fullname(first_name, last_name) + ", we're from the same place!")
+    if hometown(town):
+        print("Hi, " + fullname(first_name, last_name) + ", we're from the same place!")
 
-   else:
-      print("Hi, " + fullname(first_name, last_name) + ", I'd like to visit Fairfield, CA!")
+    else:
+        print("Hi, " + fullname(first_name, last_name) + ", I'd like to visit Fairfield, CA!")
 
 # TEST_CASES:
 # hometown_greetings("Fairfield", "Kristen", "Campbell")
@@ -89,14 +90,14 @@ def hometown_greetings(town, first_name, last_name):
    #     "blackberry", or "currant."
 
 def is_berry():
-   """ Return boolean if a certain berry
+    """ Return boolean if a certain berry
 
-   **************************************
-   * Pseudocode:                        *
-   * 1. Take input and assign to berry  *
-   * 2. Return berry based on matches   *
-   **************************************
-   """
+    **************************************
+    * Pseudocode:                        *
+    * 1. Take input and assign to berry  *
+    * 2. Return berry based on matches   *
+    **************************************
+    """
 
     berry = input("Please enter a delicious berry: ")
 
@@ -121,13 +122,13 @@ def is_berry():
    #     return 0 if is_berry() == True, and 5 if is_berry() == False.
 
 def shipping_cost():
-   """ Return value based on is_berry()
+    """ Return value based on is_berry()
 
-   ****************************************
-   * Pseudocode:                          *
-   * 1. Return 0 if berry, else return 5  *
-   ****************************************
-   """
+    ****************************************
+    * Pseudocode:                          *
+    * 1. Return 0 if berry, else return 5  *
+    ****************************************
+    """
 
     if is_berry():
         return 0
@@ -142,13 +143,12 @@ def shipping_cost():
    #     given fruit, which should be at the end of the new list.
 
 def add_fruit(fruit, fruit_list):
-   """ Return new list with added new fruit
-
-   *********************************************************
-   * Pseudocode:                                           *
-   * 1. Append fruit with fruit_list then return new list  *
-   *********************************************************
-   """
+    """ Return new list with added new fruit
+    *********************************************************
+    * Pseudocode:                                           *
+    * 1. Append fruit with fruit_list then return new list  *
+    *********************************************************
+    """
 
     fruit_list.append(fruit)
     return fruit_list
@@ -174,14 +174,14 @@ def add_fruit(fruit, fruit_list):
    #     fees.
 
 def calculate_price(base_price, state_abbreviation, tax_percentage):
-   """ Return calculated price after state fees and tax
-
-   ******************************************
-   * Pseudocode:                            *
-   * 1. Calculate total fee after tax       *
-   * 2. Apply state fees and get new total  *
-   ******************************************
-   """
+    """ Return calculated price after state fees and tax
+    
+    ******************************************
+    * Pseudocode:                            *
+    * 1. Calculate total fee after tax       *
+    * 2. Apply state fees and get new total  *
+    ******************************************
+    """
 
     # Caculate Tax
     total_after_tax = (base_price * tax_percentage) + base_price
