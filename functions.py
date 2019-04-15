@@ -175,7 +175,7 @@ def add_fruit(fruit, fruit_list):
 
 def calculate_price(base_price, state_abbreviation, tax_percentage):
     """ Return calculated price after state fees and tax
-    
+
     ******************************************
     * Pseudocode:                            *
     * 1. Calculate total fee after tax       *
